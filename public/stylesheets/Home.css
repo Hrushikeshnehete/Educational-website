@@ -1,0 +1,147 @@
+.container1 { 
+    background-image: url(/2-app/public/images/bg-img.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 600px; 
+    width: 100%; 
+    animation: fadeInBackground 2s ease-in-out; 
+} 
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.navbar{
+    position: fixed;
+    top: 0; 
+    z-index: 10;
+}
+.navbar-brand {
+   font-weight: bold;
+   font-family: cursive;
+   font-size: 30px;
+   transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.navbar-brand:hover {
+   transform: scale(1.1); 
+   color: #ffffff;
+}
+
+.nav-link { 
+    color: rgb(8, 8, 8); 
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover { 
+    color: #ff002b; 
+} 
+
+.h1 { 
+    font-family: 'Segoe UI'; 
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.home {
+    padding-top: 170px;
+    transition: padding 0.3s ease; 
+}
+
+.search input {
+    padding: 8px 20px;
+    border: 2px solid #ffe066;
+    transition: border 0.3s ease, background-color 0.3s ease; 
+}
+
+.search input:hover {
+    background-color: #fff8e1; 
+    border-color: #ffcc33; 
+}
+
+.explore {
+    height: 300px;
+    padding-top: 75px;
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.explore_page {
+    background-color: #ffe066;
+    padding: 30px 100px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.explore_page:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+}
+
+.card-body {
+    background-color: #ffe066;
+    animation: popIn 1s ease; 
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.footer-contents {
+    display: flex;
+    animation: fadeInUp 1.5s ease; 
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.footer-col-3 .col-contents a {
+    text-decoration: none;
+    color: black;
+    gap: 30px;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.footer-col-3 .col-contents a:hover {
+    color: #ff0037; 
+    transform: translateY(-3px);
+}

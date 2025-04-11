@@ -1,0 +1,12 @@
+.col-3{
+    height: 400px;
+    position: sticky;
+    top: 0%;
+}
+.p2{
+    height: 100%;
+    background-color: #ffe066;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   font-size: 18px;
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8Educators
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384
+          QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="/public/stylesheets/Home.css">
+    <style>
+        .container1 { 
+    background-image: url(/images/background.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 600px; 
+    width: 100%; 
+    animation: fadeInBackground 2s ease-in-out; 
+} 
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.navbar{
+    position: fixed;
+    top: 0; 
+    z-index: 10;
+}
+.navbar-brand {
+   font-weight: bold;
+   font-family: cursive;
+   font-size: 30px;
+   transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.navbar-brand:hover {
+   transform: scale(1.1); 
+   color: #ffffff;
+}
+
+.nav-link { 
+    color: rgb(8, 8, 8); 
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover { 
+    color: #ff002b; 
+} 
+
+.h1 { 
+    font-family: 'Segoe UI'; 
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.home {
+    padding-top: 170px;
+    transition: padding 0.3s ease; 
+}
+
+.search input {
+    padding: 8px 20px;
+    border: 2px solid #ffe066;
+    transition: border 0.3s ease, background-color 0.3s ease; 
+}
+
+.search input:hover {
+    background-color: #fff8e1; 
+    border-color: #ffcc33; 
+}
+
+.explore {
+    height: 300px;
+    padding-top: 75px;
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.explore_page {
+    background-color: #ffe066;
+    padding: 30px 100px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.explore_page:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+}
+
+.card-body {
+    background: linear-gradient(white, #ffe066);
+    animation: popIn 1s ease; 
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.footer-contents {
+    display: flex;
+    animation: fadeInUp 1.5s ease; 
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.footer-col-3 .col-contents a {
+    text-decoration: none;
+    color: black;
+    gap: 30px;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.footer-col-3 .col-contents a:hover {
+    color: #ff0037; 
+    transform: translateY(-3px);
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="row mb-5">
+        <nav class="navbar navbar-expand-lg pe-3 ps-3 bg-warning">
+            <div class="container-fluid ps-5 pe-5">
+                <a class="navbar-brand ps-5" href="/">8Educators</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false " aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ms-5 ps-5 ">
+                        <li class="nav-item "><a class="nav-link" href="/Contact">ContactUs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pattern">Pattern</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/ques">MCQ Ques</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/marks">Progress Check</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/imp">Important Topics</a></li>
+                    </ul>
+                    <form action="/login">
+                        <button class="btn btn-outline-dark" id="login" type="submit">login</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container1">
+            <div class="home text-center">
+                <h1 class="title mt-5">Clear Your Concept Here!</h1>
+                <div class="search">
+                    <input class="in1 mt-5" type="text" name="courses" id="courses" placeholder="Search your Course" />
+                    <button class="btn btn-outline-dark ps-4 pe-4 pt-2 pb-2 me-2" type="button">Send</button>
+                    </input>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div id="explore" class="explore ps-5 pe-5">
+                <div class="explore_page text-center ">
+                    <h3>If You Don't know where to Start?</h3>
+                    <p>Explore your course and start from scratch to achieve excellence. With comprehensive resources,
+                        step-by-step guidance, and personalized support, you can build a strong foundation and master
+                        key concepts. Stay consistent, practice regularly, and track your progress to score high. Unlock
+                        your potential and reach your academic goals with confidence and determination. </p>
+                    <form action="/Explore">
+                        <button class="btn btn-outline-dark ps-4 pe-4 me-3" type="submit">Explore</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-5 pt-5" height="700px">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card mt-5">
+              <div class="card-body">
+                <h5 class="card-title">Pattern</h5>
+                <p class="card-text">This may help you to score well in board Exams so, click on Go.</p>
+                <form action="/pattern">
+                    <button class="btn btn-outline-dark ps-4 pe-4 me-3" type="submit" >Go </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">MCQ Questions</h5>
+                <p class="card-text">This may help you to score well in board Exams so, click on Go.</p>
+               <form action="/ques">
+                <button class="btn btn-outline-dark ps-4 pe-4 me-3" type="submit">Go </button>
+               </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 mb-sm-0 mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Last Year Questions</h5>
+                  <p class="card-text">This may help you to score well in board Exams so, click on Go.</p>
+                 <form action="">
+                    <button class="btn btn-outline-dark ps-4 pe-4 me-3" type="submit">Go </button>
+                 </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mt-4 mb-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Important Topics</h5>
+                  <p class="card-text">This may help you to score well in board Exams so, click Go.</p>
+                 <form action="/imp">
+                    <button class="btn btn-outline-dark ps-4 pe-4 me-3" type="submit">Go </button>
+                 </form>
+                </div>
+              </div>
+            </div>
+      </div>
+        <footer class="bg-warning">
+            <div class="footer-contents ps-5">
+                <div class="footer-col footer-col-1 ms-4 me-5 mt-3 ">
+                    <div class="col-title">
+                        <h3>8educators</h3>
+                    </div>
+                    <div class="col-contents mb-4 me-5">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod.</p>
+                    </div>
+                </div>
+                <div class="footer-col footer-col-2">
+                    <div class="col-title mt-3">
+                        <h3>Contact</h3>
+                    </div>
+                    <div class="col-contents m-3">
+                        <div class="contact-row  mt-3">
+                            <span >Address : </span><br>
+                            <span> jalgaon, Maharashtra, India</span>
+                        </div>
+                        <div class="contact-row mt-3">
+                            <span>Phone</span>
+                            <span>+91 9067472665</span>
+                        </div>
+                        <div class="contact-row mt-3">
+                            <span>Website</span><br>
+                            <span>8Educators.com</span>
+                        </div>
+                        <div class="contact-row mt-3">
+                            <span>Email</span><br>
+                            <span>info@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col footer-col-3 mt-3  text-center ">
+                    <div class="col-title">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <div class="col-contents p-2 text-center">
+                        <a  href="/">Home</a><br><br>
+                        <a  href="/Explore">Explore</a><br><br>
+                        <a  href="/Contact">ContactUs</a><br><br>
+                        <a  href="/pattern">Pattern</a><br><br>
+                        <a  href="/imp">Importatnt Topics</a><br><br>
+                    </div>
+                </div>
+            </div>
+            <hr >
+            <div class="copy-rights bg-warning text-center">
+                <p>Created By <b class="text-primary">8educators</b> All Rights Reserved</p>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

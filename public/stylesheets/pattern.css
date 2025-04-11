@@ -1,0 +1,429 @@
+.col-3 {
+    height: 200px;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.p1 {
+    height: 100%;
+    background-color: #ffe066;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.p1:hover {
+    background-color: #ffd94d; 
+    transform: scale(1.02); 
+}
+
+.contlist {
+    position: sticky;
+    top: 0px;
+    animation: slideIn 1.5s ease-in-out; 
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.col-3 {
+    height: 200px;
+}
+
+.contlist {
+    position: fixed; 
+    top: 0;
+    background-color: white;
+    z-index: 10; 
+    border-radius: 5px; 
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+.maths-cont {
+    border-radius: 10px;
+    background: #f7f9fc; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    animation: fadeInUp 1.2s ease-in-out; 
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.section h5:hover {
+    color: #ff8c00; 
+    transform: scale(1.05); 
+}
+
+.section ul li,
+.section ol li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    padding-left: 20px;
+    position: relative;
+    transition: all 0.3s ease; 
+}
+
+.section ul li:hover,
+.section ol li:hover {
+    color: #007bff; 
+    transform: translateX(5px); 
+}
+
+.section ul li:before {
+    content: "✔";
+    color: #28a745; 
+    margin-right: 8px;
+}
+
+.section {
+    padding: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate-header {
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.shadow-lg {
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-header {
+    animation: bounce 1.5s ease-in-out;
+    color: #007bff;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.collapse-content h5 {
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.collapse-content h5:hover {
+    color: #ff8c00;
+    transform: scale(1.05);
+}
+
+.collapse-content ul li,
+.collapse-content ol li {
+    padding-left: 20px;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.collapse-content ul li:hover,
+.collapse-content ol li:hover {
+    color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .col-3{
+    height: 200px;
+}
+.p1 {
+    height: 100%;
+    background-color: #ffe066;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.contlist{
+    position: sticky;
+    top: 0px;
+   
+} */

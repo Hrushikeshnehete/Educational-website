@@ -1,0 +1,27 @@
+
+.main1{
+    height: 700px;
+    width: 1200px;
+    padding: 30px;
+}
+.row{
+    background: linear-gradient( #f5cf37 , white);
+    margin-left: 40px;
+    margin-right: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 700px;
+    width: 1200px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.s11th{
+    background-color: #e2e1db ;
+    height: 350px;
+    width: 1100px;
+    border-radius: 20px;
+}
+
+.icon{
+    height: 30px;
+}
